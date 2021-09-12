@@ -279,16 +279,6 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/OP4A7A/proprietary/odm/etc/nfc/sn100u.bin_sn100t_fw_01_10_57:$(TARGET_COPY_OUT_ODM)/etc/nfc/sn100u.bin_sn100t_fw_01_10_57 \
     vendor/oppo/OP4A7A/proprietary/odm/etc/seccomp_policy/codec2.vendor.base.policy:$(TARGET_COPY_OUT_ODM)/etc/seccomp_policy/codec2.vendor.base.policy \
     vendor/oppo/OP4A7A/proprietary/odm/etc/sensor/sensor_config.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_config.json \
-    vendor/oppo/OP4A7A/proprietary/odm/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml \
-    vendor/oppo/OP4A7A/proprietary/odm/etc/vintf/manifest/manifest_nfc_sn100t.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest/manifest_nfc_sn100t.xml \
-    vendor/oppo/OP4A7A/proprietary/odm/etc/vintf/manifest/manifest_oplus_bluetooth_audio.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest/manifest_oplus_bluetooth_audio.xml \
-    vendor/oppo/OP4A7A/proprietary/odm/etc/vintf/manifest/manifest_oplus_charger.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest/manifest_oplus_charger.xml \
-    vendor/oppo/OP4A7A/proprietary/odm/etc/vintf/manifest/manifest_oplus_extcamera.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest/manifest_oplus_extcamera.xml \
-    vendor/oppo/OP4A7A/proprietary/odm/etc/vintf/manifest/manifest_oplus_nfc.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest/manifest_oplus_nfc.xml \
-    vendor/oppo/OP4A7A/proprietary/odm/etc/vintf/manifest/manifest_oplus_orms.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest/manifest_oplus_orms.xml \
-    vendor/oppo/OP4A7A/proprietary/odm/etc/vintf/manifest/vendor.pixelworks.hardware.display.iris-service.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest/vendor.pixelworks.hardware.display.iris-service.xml \
-    vendor/oppo/OP4A7A/proprietary/odm/etc/vintf/manifest/vendor.pixelworks.hardware.feature.irisfeature-service.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest/vendor.pixelworks.hardware.feature.irisfeature-service.xml \
-    vendor/oppo/OP4A7A/proprietary/odm/etc/vintf/manifest/manifest_dsds.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest/manifest_dsds.xml \
     vendor/oppo/OP4A7A/proprietary/odm/etc/wifi/bdwlan.elf:$(TARGET_COPY_OUT_ODM)/etc/wifi/bdwlan.elf \
     vendor/oppo/OP4A7A/proprietary/odm/etc/wifi/bin_version:$(TARGET_COPY_OUT_ODM)/etc/wifi/bin_version \
     vendor/oppo/OP4A7A/proprietary/odm/etc/wifi/regdb.bin:$(TARGET_COPY_OUT_ODM)/etc/wifi/regdb.bin \
@@ -1536,7 +1526,6 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/OP4A7A/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/oppo/OP4A7A/proprietary/vendor/etc/system_properties.xml:$(TARGET_COPY_OUT_VENDOR)/etc/system_properties.xml \
     vendor/oppo/OP4A7A/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
-    vendor/oppo/OP4A7A/proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml \
     vendor/oppo/OP4A7A/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
     vendor/oppo/OP4A7A/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
     vendor/oppo/OP4A7A/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
@@ -2191,4 +2180,13 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     WfdCommon \
     android.hardware.neuralnetworks@1.3-service-qti-hta \
-    android.hardware.neuralnetworks@1.3-service-qti
+    android.hardware.neuralnetworks@1.3-service-qti \
+    vendor.qti.gnss@4.0-service \
+    manifest_android.hardware.drm@1.3-service.widevine \
+    manifest_oplus_bluetooth_audio \
+    manifest_oplus_charger \
+    manifest_oplus_extcamera \
+    manifest_oplus_nfc \
+    manifest_oplus_orms \
+    vendor.pixelworks.hardware.display.iris-service \
+    vendor.pixelworks.hardware.feature.irisfeature-service
